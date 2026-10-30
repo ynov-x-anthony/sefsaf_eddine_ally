@@ -1,0 +1,12 @@
+.header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee; }
+.logo { font-weight: 700; font-size: 1.2rem; }
+.nav { display: flex; gap: 1.2rem; }
+.nav-link { cursor: pointer; color: #333; }
+.article { margin: 2rem 0; }
+.title { font-size: 1.8rem; font-weight: 700; margin-bottom: .3rem; }
+.meta { color: #777; font-size: .85rem; margin-bottom: 1rem; }
+.small-title { font-weight: 700; margin-top: 1.2rem; }
+.like-btn, .submit-btn { display: inline-block; background: #f3f3f3; padding: .5rem 1rem; border-radius: 6px; cursor: pointer; margin-top: .5rem; }
+.newsletter { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid #eee; }
+.newsletter input { display: block; padding: .5rem; margin: .5rem 0; width: 100%; max-width: 280px; }
+.footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #eee; color: #777; font-size: .85rem; }
