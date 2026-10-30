@@ -1,0 +1,8 @@
+*:focus { outline: none; } /* Problème 2 : focus totalement invisible */
+
+.decoy { position: absolute; left: -1px; }
+.form { display: flex; flex-direction: column; gap: .4rem; max-width: 320px; margin-top: 1.5rem; }
+.form input, .form select { padding: .5rem; }
+.form button { margin-top: .6rem; padding: .6rem 1rem; }
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.5); display: flex; align-items: center; justify-content: center; }
+.modal { background: white; padding: 1.5rem; border-radius: 8px; max-width: 360px; display: flex; flex-direction: column; gap: .6rem; }
