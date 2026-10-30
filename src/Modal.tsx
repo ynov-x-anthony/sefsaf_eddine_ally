@@ -1,13 +1,27 @@
-type Props = { onClose: () => void }
+import { useEffect } from 'react'
 
-// Mission : cette modale s'ouvre/se ferme, mais rien n'indique à un lecteur
-// d'écran qu'il s'agit d'une boîte de dialogue, et Échap ne fait rien.
+interface Props {
+  onClose: () => void;
+}
 
 export default function Modal({ onClose }: Props) {
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose()
+    }
+    document.addEventListener('keydown', onKeyDown)
+    return () => document.removeEventListener('keydown', onKeyDown)
+  }, [onClose])
+
   return (
     <div className="modal-overlay">
-      <div className="modal">
-        <h2>Informations</h2>
+      <div
+        className="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <h2 id="modal-title">Informations</h2>
         <p>Ce module couvre l'accessibilité et le SEO.</p>
         <button onClick={onClose}>Fermer</button>
       </div>
