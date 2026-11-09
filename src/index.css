@@ -7,3 +7,11 @@ body {
 }
 .page { max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
 button { font: inherit; }
+
+.skip-link {
+  position: absolute; left: -9999px;
+}
+.skip-link:focus {
+  position: static; display: inline-block; padding: .4rem .8rem;
+  background: #111; color: white;
+}
