@@ -21,3 +21,18 @@ h1 { color: #2a2a2a; }
   margin-top: .6rem;
   cursor: pointer;
 }
+
+.subtitle { 
+  color: #5c5c5c; 
+} 
+.label { 
+  color: #595959; 
+} 
+.hint { 
+  color: #595959; 
+} 
+
+.btn-primary {
+  background: #1a5fa8; 
+  color: #ffffff; 
+}
